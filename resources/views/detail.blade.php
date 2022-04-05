@@ -7,7 +7,6 @@
             <img class="detail-img" src="{{$product['gallery']}}" alt="product">
         </div>
         <div class="col-sm-6">
-            <a href="/">Go Back</a>
             <h2>{{$product['name']}}</h2>
             <h3>₹ {{$product['price']}} /-</h3>
             <br>
