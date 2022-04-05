@@ -32,5 +32,15 @@
     .custom-product{
         height: 600px;
     }
+    .trending-item{
+        float: left;
+        width: 20%;
+    }
+    .trending-wrapper{
+        margin: 20px;
+    }
+    .detail-img{
+        height: 200px;
+    }
 </style>
 </html>
