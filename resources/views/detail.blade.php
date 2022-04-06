@@ -8,7 +8,7 @@
         </div>
         <div class="col-sm-6">
             <h2>{{$product['name']}}</h2>
-            <h3>₹ {{$product['price']}} /-</h3>
+            <h3>$ {{$product['price']}} /-</h3>
             <br>
             <h4>Category : {{$product['category']}}</h4>
             <br>

@@ -1,11 +1,11 @@
 @extends('master')
 @section('content')
 
-
 <div class="custom-product">
     <div class="col-sm-10">
         <div class="trending-wrapper">
             <h3 style="margin-bottom: 20px;">Your Cart</h3>
+            <a href="ordernow" class="btn btn-success" style="margin-bottom: 20px;">Order Now</a>
             @foreach($products as $item)
             <div class="row cart-item cart-list-divider">
               <div class="col-sm-3">
@@ -20,7 +20,7 @@
                   </div>
               </div>
               <div class="col-sm-3">
-                <button style="margin-top: 40px;" class="btn btn-danger">Remove from cart</button>
+                <a href="/removecart/{{$item->cart_id}}" style="margin-top: 40px;" class="btn btn-danger">Remove from cart</a>
               </div>
             </div>
             @endforeach
