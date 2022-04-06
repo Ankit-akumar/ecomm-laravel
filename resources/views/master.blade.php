@@ -15,10 +15,15 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!-- cdns -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 </head>
 <body>
     {{ View::make('header')}}
     @yield('content')
+    <br><br>
     {{ View::make('footer')}}
 </body>
 <style>
@@ -53,5 +58,80 @@
     #pay-method{
         margin-right: 20px;
     }
+    .navbar-default{
+        background-color: #22577E;
+        color: white;
+    }
+    /* footer */
+    @media (min-width: 1200px) {
+        .container {
+            width: 1248px !important
+        }
+    }
+
+    body {
+        overflow-x: hidden
+    }
+
+    .middleTop {
+        margin: 0 auto;
+        padding: 50px 0;
+        max-width: 1600px;
+        min-width: 1024px;
+        background-color: #22577E
+    }
+
+    .middle-heading {
+        font-family: "font-bold";
+        font-size: 14px;
+        color: #fff;
+        margin-left: 38px;
+        padding-bottom: 15px;
+        text-transform: uppercase
+    }
+
+    .middle-content {
+        font-size: 12px;
+        color: #777 !important;
+        list-style-type: none;
+        max-width: 210px
+    }
+
+    .middleContent-footer .middleTop div {
+        box-sizing: border-box
+    }
+
+    .middleBottom {
+        background-color: #22577E;
+        text-align: center;
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+        padding: 12px 0
+    }
+
+    .middleBottomFooter {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #344c55;
+        text-align: left;
+        background-color: #000
+    }
+
+    .underLineOnHover {
+        color: #fff
+    }
+
+    .bottomfooter {
+        background-color: #22577E
+    }
+
+    .copyright {
+        color: #fff
+    }
+
+    .address {
+        color: #fff
+    }
+    /* !footer */
 </style>
 </html>

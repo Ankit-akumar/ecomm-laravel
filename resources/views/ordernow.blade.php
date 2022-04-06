@@ -16,7 +16,7 @@
             <td>$ 0.5</td>
           </tr>
           <tr>
-            <td>Delivery</td>
+            <td>Delivery Charges</td>
             <td>$ 2</td>
           </tr>
           <tr>
