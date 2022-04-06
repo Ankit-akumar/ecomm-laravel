@@ -29,17 +29,18 @@
     <br>
     <!-- form -->
     <div>
-    <form action="/action_page.php">
+    <form action="/orderplace" method="POST">
+      @csrf
         <div class="form-group">
-            <textarea placeholder="Enter delivery address" class="form-control"></textarea>
+            <textarea name="address" placeholder="Enter delivery address" class="form-control"></textarea>
         </div>
         <br>
         <div class="form-group">
             <label id="pay-method" for="pwd">Payment Method</label>
-            <input type="radio" name="payment"><span id="pay-method">UPI</span>
-            <input type="radio" name="payment"><span id="pay-method">Net Banking</span>
-            <input type="radio" name="payment"><span id="pay-method">EMI</span>
-            <input type="radio" name="payment"><span id="pay-method">Cash on Delivery</span>
+            <input type="radio" value="UPI" name="payment"><span id="pay-method">UPI</span>
+            <input type="radio" value="Net Banking" name="payment"><span id="pay-method">Net Banking</span>
+            <input type="radio" value="EMI" name="payment"><span id="pay-method">EMI</span>
+            <input type="radio" value="Cash on Delivery" name="payment"><span id="pay-method">Cash on Delivery</span>
         </div>
         <br>
         <button type="submit" class="btn btn-success">Order Now</button>
